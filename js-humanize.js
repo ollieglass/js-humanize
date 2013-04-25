@@ -16,6 +16,10 @@ Humanize = {
             return value.toString().substr(0, mag - 8) + "B"
         }
 
+        if(mag >= 12 && mag < 15) {
+            return value.toString().substr(0, mag - 11) + "T"
+        }
+
         return value;
     },
 
@@ -31,8 +35,9 @@ Humanize = {
     }
 };
 
+
 // tests
 
-// for (var i = 1; i< 10000000000000000; i*=10) {
+// for (var i = 1; i< 10000000000000000000; i*=10) {
 //     console.log(i, Humanize.magnitude(i), Humanize.humanize(i));
 // }
