@@ -38,6 +38,6 @@ Humanize = {
 
 // tests
 
-// for (var i = 1; i< 10000000000000000000; i*=10) {
+// for (var i = 1; i< 10000000000000000000; i*=5) {
 //     console.log(i, Humanize.magnitude(i), Humanize.humanize(i));
 // }
