@@ -1,7 +1,6 @@
 Humanize = {
     humanize: function (value) {
         var mag = this.magnitude(value);
-        console.log(mag);
 
         if (mag <= 3) return value;
 
